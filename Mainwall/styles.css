@@ -1,0 +1,238 @@
+* {
+    user-select: none !important;
+    overflow: hidden !important;
+    margin: 10px;
+    color: white;
+    will-change: auto !important;
+    font-size: 3vw;
+    transition: 0.5s ease !important;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    background-color: white;
+    overflow: hidden;
+}
+
+#Content {
+    rotate: 0deg;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    background-color: black;
+}
+
+main {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding-bottom: 0%;
+    transition: 0.3s ease;
+}
+
+#Main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
+    align-items: center;
+    justify-items: center;
+
+    z-index: 2;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+#ImportantContent {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+#Time {
+    font-size: 7rem;
+    font-weight: 10;
+    transition: 0.3s ease;
+}
+
+#Date {
+    font-size: 2.4rem;
+    font-weight: 100;
+}
+
+#Notifications {
+    display: flex;
+    width: auto;
+    max-width: calc(100vw - 100px);
+    margin-top: 0%;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    width: 7vw;
+    height: 7vw;
+    object-fit: cover;
+
+}
+
+#Setup {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 100vh;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    transition: 0.2s ease;
+}
+
+img {
+    filter: invert(100%);
+    width: 50vw;
+    height: 50vw;
+}
+
+#settings-buttons {
+    overflow-y: auto;
+    margin-left: 0;
+}
+
+button {
+    width: calc(100% - 20px);
+    margin: 0;
+    height: 17vw;
+    background-color: rgba(255,255,255,0.2);
+    border: none;
+    backdrop-filter: blur(34px);
+    border-radius: 1000px;
+    margin: 20px;
+    font-size: 1.2rem;
+}
+
+#debug {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+#wallpaper {
+    background-position: center;
+    background-size: cover; /* Это заставит фон заполнить элемент, сохраняя пропорции */
+    background-repeat: no-repeat;
+    width: 125vw;
+    height: 125vh;
+    object-fit: cover;
+    z-index: 1;
+    position: absolute;
+    opacity: 20%;
+    filter: invert(0%);
+    filter: blur(34px);
+    transition: 0.3s ease;
+}
+
+.io {
+    width: 25px;
+    height: 25px;
+    border: 1.5px black solid;
+    border-radius: 25px;
+    color: black;
+    padding-left: 25px;
+    padding-right: 35px;
+    padding-top: 5px;
+}
+
+.Widget {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+
+    align-content: center;
+    justify-content: center;
+
+    text-align: center;
+    
+    color: white;
+}
+
+.hide {
+    opacity: 0;
+}
+
+#settings {
+    display: none;
+    position: fixed;
+    width: calc(100vw - 40px);
+    height: calc(100vh - 40px);
+    z-index: 100;
+    background-color: transparent;
+    backdrop-filter: blur(44px);
+    padding: 20px;
+    margin-bottom: -200px;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+#wallpaper {
+    background-image: url('bg.png') !important;
+}
+
+#activation {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+
+    transition: 0.3s ease;
+
+    opacity: 1;
+}
+
+.activlink {
+    position: fixed;
+    bottom: 15%;
+}
+
+.activbanner {
+    position: fixed;
+    top: 15%;
+    font-size: 4vw;
+    font-weight: 500;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>WatchUI</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!--div id="debug">
+            <p style="color: red;">DEBUG PANEL</p>
+            <div>
+                <button onclick="Connect();">End setup</button>
+            </div>
+            <div>
+                <button>Go home</button>
+                <button>WiFi enable / disable</button>
+                <button>4G enable / disable</button>
+            </div>
+            <span></span>
+            <p style="color: red;">I/O</p>
+            <div style="display: flex;">
+                <div class="io" id="vibroIO">Vibro</div>
+                <button>Press main button</button>
+                <button>Trigger NFC</button>
+            </div>
+        </div-->
+        <div id="activation">
+            
+        </div>
+        <div id="Content">
+            <main style="opacity: 1;">
+                <div id="Main" onclick="GoFromAOD();">
+                    <div class="Widget hide" style="display: none;" id="Widget"><img src="arrow.png" id="nav-arrow" style="filter: invert(0); width: 4vh; height: 4vh; object-fit: cover;"><p id="nav-info">До дома осталось 10км</p></div>
+                    
+                    <div id="ImportantContent">
+                        <p id="Time">10:11</p>
+                        <p id="Date">Ср, 25 сентября</p>
+                    </div>
+                    <div id="Notifications">
+                    </div>
+                </div>
+
+
+                <div id="wallpaper"></div>
+                
+                <!--div id="Setup">
+                    <img src="connect.png">
+                    <button onclick="SkipSetup();">Skip setup</button>
+                </div-->
+            </main>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
